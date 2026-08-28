@@ -1,55 +1,44 @@
 # Discord Music Bot
 
-A Discord music bot built with Node.js, Discord.js,
-@discordjs/voice, FFmpeg and Audius API.
+Discord music bot built with Node.js and discord.js.
 
 ## Features
 
-- Play music from Audius
-- Queue system
-- Pause / Resume
-- Skip
-- Previous
-- Restart
+- Search tracks using Audius API
+- Play music in voice channels
+- Queue management
+- Skip / previous / restart
+- Pause / resume
 - Shuffle
-- Loop track / queue
-- Search
-- Playback history
-- Multiple guild support
+- Track and queue loop modes
+- Listening history
+- Automatic playback of queued tracks
 
-## Technologies
+## Tech Stack
 
 - Node.js
 - JavaScript
-- Discord.js
+- discord.js
 - @discordjs/voice
 - Axios
 - FFmpeg
 - Audius API
 
-## Architecture
-
-commands/  → Discord commands
-services/  → business logic and external APIs
-index.js   → application entry point
-
 ## Installation
 
-npm install
+1. Clone repository
+2. Install dependencies
+3. Create .env
+4. Add required tokens/API keys
+5. Run the bot
 
-Create .env file:
+## Environment Variables
 
 DISCORD_TOKEN=
-AUDIUS_API_KEY=
 CLIENT_ID=
 GUILD_ID=
+AUDIUS_API_KEY=
 
-Install FFmpeg and make sure it is available in PATH.
+## Run
 
-Register commands:
-
-node deploy-commands.js
-
-Start bot:
-
-node index.js
+npm start
